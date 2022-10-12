@@ -16,7 +16,12 @@ function App() {
           return fetch ('https://openapi.programming-hero.com/api/quiz');
          },
         element:<Home></Home>},
-        {path: 'statistic', element:<Statistic></Statistic>},
+
+        {path: 'statistic', 
+        // loader: async()=>{
+        //   return fetch ('https://openapi.programming-hero.com/api/quiz');
+        //  },
+         element:<Statistic></Statistic>},
         {path: 'blog' , element: <Blog></Blog>}
       ]
     }

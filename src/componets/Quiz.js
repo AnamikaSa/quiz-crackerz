@@ -1,19 +1,18 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
-// import Questions from './Questions';
+import Questions from './Questions';
 
 const Quiz = () => {
     const ques= useLoaderData().data.questions;
     console.log(ques);
     return (
         <div>
-            <p>{ques[0].question}</p>
-            {/* {
-            ques.map (que =><Questions
-            key={que.id}
-            ques={que}
+            {
+            ques.map (ques=><Questions
+            key={ques.id}
+            ques={ques}
             ></Questions>)
-} */}
+}
         </div>
     );
 };

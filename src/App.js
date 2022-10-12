@@ -2,7 +2,7 @@ import './App.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Main from './layout/Main';
 import Home from './componets/Home/Home';
-import Statistic from './componets/Statistic/Startstic';
+import Statistic from './componets/Statistic/Statistic';
 import Blog from './componets/Blog/Blog';
 import Quiz from './componets/Quiz';
 
@@ -27,9 +27,9 @@ function App() {
         },
 
         {path: '/statistic', 
-        // loader: async()=>{
-        //   return fetch ('https://openapi.programming-hero.com/api/quiz');
-        //  },
+        loader: async()=>{
+          return fetch ('https://openapi.programming-hero.com/api/quiz');
+         },
          element:<Statistic></Statistic>},
         {path: '/blog' , element: <Blog></Blog>}
       ]

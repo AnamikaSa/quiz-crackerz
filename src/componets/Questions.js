@@ -3,7 +3,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const Questions = ({ ques }) => {
-    const { id, options, question, correctAnswer } = ques;
+    const { options, question, correctAnswer } = ques;
     // console.log(question);
     const handleA = (ans) => {
         if (ans === correctAnswer) {

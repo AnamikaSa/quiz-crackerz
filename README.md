@@ -1,3 +1,9 @@
+# This Quiz Quiz Game is built for those who are waiting to test their skills. 
+here is the live site link :
+(https://quiz-crackerz-anamikasa.netlify.app/home)
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

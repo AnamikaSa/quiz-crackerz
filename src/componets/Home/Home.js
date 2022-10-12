@@ -4,7 +4,11 @@ import Topics from '../topics/Topics';
 
 const Home = () => {
     const t = useLoaderData();
-    console.log(t);
+    // console.log(t);
+
+    // const handleAdd=t=>{
+    //     console.log(t);
+    // }
     return (
         <div>
             <p className='mt-5 font-bold'>A quiz is a form of game or mind sport in which players attempt to answer questions correctly about a certain or variety of subjects. Quizzes can be used as a brief assessment in education and similar fields to measure growth in knowledge, abilities, or skills.</p>
@@ -15,6 +19,7 @@ const Home = () => {
                 t.data.map (topic => <Topics
                     key={topic.id}
                     topic={topic}
+                    // handleAdd={handleAdd}
                     ></Topics>)
             }
             </div>

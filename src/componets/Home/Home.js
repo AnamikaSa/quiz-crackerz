@@ -4,7 +4,7 @@ import Topics from '../topics/Topics';
 
 const Home = () => {
     const t = useLoaderData();
-    console.log(t);
+    // console.log(t);
 
     // const handleAdd=t=>{
     //     console.log(t);

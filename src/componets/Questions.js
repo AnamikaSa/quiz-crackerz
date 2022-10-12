@@ -10,15 +10,14 @@ const Questions = ({ ques }) => {
             toast.info("Answer is Correct");
         }
         else {
-            toast.error("Wrong Answer");
+            toast.error(`Wrong Answer!! Answer is :  ${correctAnswer}`);
         }
-        console.log(ans);
     }
     return (
         <div>
-            <p>Question: {question}</p>
+            <p className='mt-6 bg-zinc-300 p-10 ml-20 mr-20'>Question: {question}</p>
             {
-                options?.map((op, i) => <div> <button onClick={() => handleA(op)}>{op}</button> </div>)
+                options?.map((op) => <div> <button className='p-3 bg-gray-400 mt-3 w-64' onClick={() => handleA(op)}>{op}</button> </div>)
 
             }
             <ToastContainer/>
